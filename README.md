@@ -5,10 +5,10 @@ This is your guide to get the project working
 
 The project require :
 ## Software 
- ESP-IDF
+ ESP-IDF\
 
 ## Hardware
- ESP32
+ ESP32 \
  OLED SSD1307
  DHT22
 
@@ -18,7 +18,7 @@ idf.py menuconfig
 ```
 
 To run the project you need to choice whoch part of the project you need to run under FreeRTOS Example Configuration
-1- Basic led blinking
+1- Basic led blinking 
 2- Queue Communication
 3- Binary Semaphore communication
 4- Mutex (Priority Inheritance)
