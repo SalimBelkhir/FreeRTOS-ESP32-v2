@@ -5,12 +5,12 @@ This is your guide to get the project working
 
 The project require :
 ## Software 
-### ESP-IDF
+ ESP-IDF
 
 ## Hardware
-### ESP32
-### OLED SSD1307
-### DHT22
+ ESP32
+ OLED SSD1307
+ DHT22
 
 First of all tap :
 ```
