@@ -1,0 +1,19 @@
+dependencies:
+  idf:
+    source:
+      type: idf
+    version: 6.0.0
+  quackonauty/esp_ssd1306:
+    component_hash: 2ec9af1c61cf0a011855b6df8c102fa1241179c86c3fec9e2696809828bf1d73
+    dependencies: []
+    source:
+      git: https://github.com/quackonauty/ESP-IDF-ESP_SSD1306.git
+      path: .
+      type: git
+    version: 5a09b49bca90bcb153d166761b678782e52d877f
+direct_dependencies:
+- idf
+- quackonauty/esp_ssd1306
+manifest_hash: d67b71b3645ecaa83dbb33c697eaaa1f3cc0765d493e651cfb6843de66154f19
+target: esp32
+version: 2.0.0

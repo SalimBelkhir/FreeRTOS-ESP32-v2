@@ -1,0 +1,45 @@
+menu "FreeRTOS Example Configuration"
+
+    choice FREERTOS_EXAMPLE_TYPE
+
+        prompt "Select FreeRTOS Feature to Test"
+        default FREERTOS_EXAMPLE_TASK
+        help 
+            Select which FreeRTOS feature demonstration to run.
+            Only one feature can be active at a time.
+
+        config FREERTOS_EXAMPLE_TASK
+            bool "Basic led blinking"
+            help
+                Demonstrates basic FreeRTOS tasks with LED blinking.
+                Uses two tasks with different blink rates.
+
+        config FREERTOS_EXAMPLE_QUEUE
+            bool "Queue Communication"
+            help 
+                Demonstrates inter-task communication using queues.
+                One task sends data, another receives it.
+
+        config FREERTOS_EXAMPLE_SEMAPHORE
+            bool "Binary Semaphore communication"
+            help 
+                Demonstrates synchronization using binary semaphores.
+                ADC task signals UART task when data is ready.
+        
+        config FREERTOS_EXAMPLE_MUTEX
+            bool "Mutex (Priority Inheritance)"
+            help
+                Demonstrates mutex usage with priority inheritance.
+                Shows how high priority tasks can inherit priority
+                to prevent priority inversion.
+
+        config FREERTOS_EXAMPLE_EVENT_GROUP
+            bool "Event Groups"
+            help
+                Demonstrates event groups for synchronization.
+                Processing task waits for multiple sensor events.
+
+    endchoice
+
+endmenu
+

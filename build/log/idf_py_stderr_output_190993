@@ -1,0 +1,18 @@
+Command: ninja flash
+CMake Error at /home/pc/esp32/esp-idf/tools/cmake/build.cmake:649 (message):
+  ERROR: 'git fetch origin' failed with exit code 128
+
+  fatal: unable to access
+  'https://github.com/quackonauty/ESP-IDF-ESP_SSD1306.git/': Could not
+  resolve host: github.com
+
+
+
+
+
+Call Stack (most recent call first):
+  /home/pc/esp32/esp-idf/tools/cmake/project.cmake:740 (idf_build_process)
+  CMakeLists.txt:8 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

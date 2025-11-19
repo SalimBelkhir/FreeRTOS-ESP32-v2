@@ -1,0 +1,15 @@
+Command: ninja flash
+Configuration Report                                                                       
+ ───────────────────────────────────────────────────────────────────────────────────────── 
+   Parser Version: 1                                                                       
+   Verbosity: default                                                                      
+   Defaults policy: sdkconfig                                                              
+   Status: Finished with notifications                                                     
+                                                                                           
+  Miscellaneous                                                                            
+   ─────────────────────────────────────────────────────────────────────────────────────   
+    * Trying to set symbol FREERTOS_EXAMPLE_TASK to n, but it is currently selected by     
+    choice FREERTOS_EXAMPLE_TYPE. For setting it to n, set another choice symbol to y      
+    instead.                                                                               
+   ─────────────────────────────────────────────────────────────────────────────────────   
+ ───────────────────────────────────────────────────────────────────────────────────────── 

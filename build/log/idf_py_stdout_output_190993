@@ -1,0 +1,7 @@
+Command: ninja flash
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/pc/esp32/esp-idf/rtos -B/home/pc/esp32/esp-idf/rtos/build

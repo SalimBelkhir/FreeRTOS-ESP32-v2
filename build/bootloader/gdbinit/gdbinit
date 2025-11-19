@@ -1,0 +1,2 @@
+source /home/pc/esp32/esp-idf/rtos/build/bootloader/gdbinit/symbols
+source /home/pc/esp32/esp-idf/rtos/build/bootloader/gdbinit/connect

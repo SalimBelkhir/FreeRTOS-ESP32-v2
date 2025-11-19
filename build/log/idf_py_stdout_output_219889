@@ -1,0 +1,10 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] quackonauty/esp_ssd1306 (5a09b49bca90bcb153d166761b678782e52d877f)
+NOTICE: [2/2] idf (6.0.0)
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/pc/esp32/esp-idf/rtos -B/home/pc/esp32/esp-idf/rtos/build

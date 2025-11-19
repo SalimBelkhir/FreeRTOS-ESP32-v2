@@ -1,0 +1,129 @@
+Command: /home/pc/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/pc/esp32/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/pc/esp32/esp-idf/rtos/build/rtos.elf /home/pc/esp32/esp-idf/rtos/build/bootloader/bootloader.elf -m '/home/pc/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/pc/esp32/esp-idf/tools/idf.py'
+ՕՕ C�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6376
+load:0x40078000,len:15864
+load:0x40080400,len:3908
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0-dev-2039-g2044fba6e7-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Nov 16 2025 16:49:57[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09634h ( 38452) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001965c vaddr=3ffb0000 size=025e8h (  9704) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bc4c vaddr=40080000 size=043cch ( 17356) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1131ch ( 70428) map[0m
+[0;32mI (139) esp_image: segment 4: paddr=00031344 vaddr=400843cc size=06ab4h ( 27316) load[0m
+[0;32mI (150) esp_image: segment 5: paddr=00037e00 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (156) boot: Disabling RNG early entropy source...[0m
+[0;32mI (168) cpu_start: Multicore app[0m
+[0;32mI (176) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (177) cpu_start: Pro cpu start user code[0m
+[0;32mI (177) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (179) app_init: Application information:[0m
+[0;32mI (182) app_init: Project name:     rtos[0m
+[0;32mI (186) app_init: App version:      v6.0-dev-2039-g2044fba6e7-dirty[0m
+[0;32mI (192) app_init: Compile time:     Nov 16 2025 16:54:33[0m
+[0;32mI (197) app_init: ELF file SHA256:  e8f2fe5b2...[0m
+[0;32mI (201) app_init: ESP-IDF:          v6.0-dev-2039-g2044fba6e7-dirty[0m
+[0;32mI (207) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (211) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (215) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (219) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (225) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (230) heap_init: At 3FFB2EB0 len 0002D150 (180 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (241) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 4008AE80 len 00015180 (84 KiB): IRAM[0m
+[0;33mW (253) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (268) spi_flash: flash io: dio[0m
+[0;33mW (271) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (285) main_task: Started on CPU0[0m
+[0;32mI (295) main_task: Calling app_main()[0m
+Starting FreeRTOS tasks...
+Running: Queue Communication
+sending sensor data 1
+[0;32mI (295) main_task: Returned from app_main()[0m
+Received sensor data : 1
+sending sensor data 2
+Received sensor data : 2
+sending sensor data 3
+Received sensor data : 3
+sending sensor data 4
+Received sensor data : 4
+sending sensor data 5
+Received sensor data : 5
+sending sensor data 6
+Received sensor data : 6
+sending sensor data 7
+Received sensor data : 7
+sending sensor data 8
+Received sensor data : 8
+sending sensor data 9
+Received sensor data : 9
+sending sensor data 10
+Received sensor data : 10
+sending sensor data 11
+Received sensor data : 11
+sending sensor data 12
+Received sensor data : 12
+sending sensor data 13
+Received sensor data : 13
+sending sensor data 14
+Received sensor data : 14
+sending sensor data 15
+Received sensor data : 15
+sending sensor data 16
+Received sensor data : 16
+sending sensor data 17
+Received sensor data : 17
+sending sensor data 18
+Received sensor data : 18
+sending sensor data 19
+Received sensor data : 19
+sending sensor data 20
+Received sensor data : 20
+sending sensor data 21
+Received sensor data : 21
+sending sensor data 22
+Received sensor data : 22
+sending sensor data 23
+Received sensor data : 23
+sending sensor data 24
+Received sensor data : 24
+sending sensor data 25
+Received sensor data : 25
+sending sensor data 26
+Received sensor data : 26
+sending sensor data 27
+Received sensor data : 27
+sending sensor data 28
+Received sensor data : 28
+sending sensor data 29
+Received sensor data : 29
+sending sensor data 30
+Received sensor data : 30
+sending sensor data 31
+Received sensor data : 31
+sending sensor data 32
+Received sensor data : 32
+sending sensor data 33
+Received sensor data : 33
+sending sensor data 34
+Received sensor data : 34
