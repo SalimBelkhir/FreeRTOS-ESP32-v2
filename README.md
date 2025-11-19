@@ -1,37 +1,43 @@
-# WELCOME TO FREERTOS ON ESP32 PROJECT 
-this project demonstares how the FreeRTOS project is working under ESP32 !
+# WELCOME TO FREERTOS ON ESP32 PROJECT
 
-This is your guide to get the project working 
+This project demonstrates how FreeRTOS works on the ESP32!  
+This is your guide to getting the project up and running.
 
-The project require :
-## Software 
- ESP-IDF\
+## Requirements
 
-## Hardware
- ESP32 \
- OLED SSD1307
- DHT22
+### Software
+- ESP-IDF
 
-First of all tap :
-```
+### Hardware
+- ESP32
+- OLED SSD1307
+- DHT22
+
+## Getting Started
+
+First, configure the project:
+```bash
 idf.py menuconfig
 ```
 
-To run the project you need to choice whoch part of the project you need to run under FreeRTOS Example Configuration
-1- Basic led blinking 
-2- Queue Communication
-3- Binary Semaphore communication
-4- Mutex (Priority Inheritance)
-5- Event Groups
+Navigate to **FreeRTOS Example Configuration** and choose which example you want to run:
 
-then write the command : 
-```
+1. Basic LED Blinking
+2. Queue Communication
+3. Binary Semaphore Communication
+4. Mutex (Priority Inheritance)
+5. Event Groups
+
+## Build and Flash
+
+Build the project:
+```bash
 idf.py build
 ```
-and finally
 
-```
+Flash to your ESP32 and monitor the output:
+```bash
 idf.py flash monitor
 ```
 
-Enjoy ;)
+Enjoy! 😊
