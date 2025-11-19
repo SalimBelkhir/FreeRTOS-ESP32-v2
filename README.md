@@ -1,16 +1,16 @@
-###WELCOME TO FREERTOS ON ESP32 PROJECT 
+### WELCOME TO FREERTOS ON ESP32 PROJECT 
 this project demonstares how the FreeRTOS project is working under ESP32 !
 
 This is your guide to get the project working 
 
 The project require :
-##Software 
-#ESP-IDF
+## Software 
+# ESP-IDF
 
-##Hardware
-#ESP32
-#OLED SSD1307
-#DHT22
+## Hardware
+# ESP32
+# OLED SSD1307
+# DHT22
 
 First of all tap :
 ```
